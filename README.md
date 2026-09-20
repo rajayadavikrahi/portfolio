@@ -1,18 +1,16 @@
-# Raja Yadav — Portfolio
+# Raja Yadav Portfolio
 
-A personal website built by ** me raja yadav** to showcase my projects,skills,journey,and work as a young developer.
+it is my personal website built to showcase my projects,skills,journey,and work as a young developer.
 
 ## Description
 
-This is my personal portfolio website , designed and handcoded by me from scratch, It is a place where I can showcase who I am, what i have build, and what I am currently learning as a new bie.
+This is my personal portfolio website , designed and handcoded by me from scratch, it is a place where I can showcase who i am, what i have build, and what I am currently learning as a new bie.
 
-The portfolio is built using React.js, bun.js, and CSS I chose bun after researching javascript runtimes and being interested in its speed and easiness
+The portfolio is built using Html, and CSS and little javascript I chose html after researching and i already know and it's easy
 
-There is currently no backend, because  im focusing on learning react.js and improving my frontend development skills.
+There is currently no backend, because  im focusing on learning HTML and improving my frontend development skills.
 
 The project is still work in progress, and I plan to continue this , expanding it with m ore projects, features, animations, and improvements as I learn.
-
-> Built with curiosity, and a lot of ❤️ by raja yadav**.
 
 ## Screenshots
 
@@ -26,62 +24,46 @@ Example:
 ## Getting Started
 
 ### Dependencies
+html, 
+css, 
+javascript
 
-Before running the project, make sure you have:
-
-* node.js or **Bun.js**
-* A modern web browser such as Chrome, Safari.
-* **Git ** (optional, if cloning the repository)
-
-The project is primarily built and run using **Bun.javascript here**.
+The project is primarily built and run using **html & javascript here**.
 
 ### Installing
 
 Clone the repo here:
 
 ```bash
-git clone [me](https://github.com/rajayadav/portfolio)
+git clone [repo](https://github.com/rajayadav/portfolio)
 ```
 
 Move into the project folder:
 
 ```bash
-cd client
-```
-
-Install the dependencies:
-
-```bash
-bun install
+cd portfolio
 ```
 
 ### Executing program
 
 Start the development server:
 
-```bash
-bun run dev
+```click
+go live
 ```
 
 Then open the local URL shown in your terminal, usually->
 
 ```text
-http://localhost:3000
+it will go live after the live server
 ```
 
 The exact port may be different depending on your project configuration.
 
 ## Help
 
-If the project does not start, try reinstalling the dependencies:
+If the project does not start, try reinstalling the dependencies: live server
 
-```bash
-rm -rf node_modules
-bun install
-bun run dev
-```
-
-If Bun is not installed, install it from the official Bun website.
 
 Make sure you are running the commands from the project directory.
 
