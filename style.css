@@ -680,6 +680,16 @@ body.light .location {
     color: #3f3f46;
 }
 
+body.light .hero-card p {
+    color: #52525b;
+}
+
+body.light .goal-card {
+    background: white;
+
+    border-color: #e4e4e7;
+}
+
 body.light .secondary-btn {
     border-color: #d4d4d8;
 
@@ -690,8 +700,22 @@ body.light .info-item {
     border-color: #e4e4e7;
 }
 
+body.light .info-item span {
+    color: #52525b;
+}
+
+body.light .info-item strong {
+    color: #27272a;
+}
+
 body.light footer {
     border-color: #e4e4e7;
+
+    color: #52525b;
+}
+
+body.light .footer-logo {
+    color: #18181b;
 }
 
 
