@@ -10,6 +10,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 90px;
 }
 
 body {
@@ -86,6 +87,57 @@ button {
     color: white;
 }
 
+.nav-links a.active {
+    color: #8b5cf6;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu-btn {
+    display: none;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 5px;
+
+    padding: 10px;
+
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-btn span {
+    display: block;
+
+    width: 22px;
+    height: 2px;
+
+    background: #d4d4d8;
+
+    border-radius: 2px;
+
+    transition: 0.3s;
+}
+
+.menu-btn.open span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.menu-btn.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-btn.open span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
 .theme-btn {
     width: 38px;
     height: 38px;
@@ -105,6 +157,14 @@ button {
 
 .theme-btn:hover {
     transform: rotate(20deg);
+}
+
+.btn:focus-visible,
+.theme-btn:focus-visible,
+.menu-btn:focus-visible,
+.nav-links a:focus-visible {
+    outline: 2px solid #8b5cf6;
+    outline-offset: 3px;
 }
 
 
@@ -649,6 +709,14 @@ body.light .nav-links a:hover {
     color: #18181b;
 }
 
+body.light .nav-links a.active {
+    color: #7c3aed;
+}
+
+body.light .menu-btn span {
+    background: #27272a;
+}
+
 body.light .theme-btn {
     background: white;
 
@@ -725,8 +793,49 @@ body.light .footer-logo {
 
 @media (max-width: 800px) {
 
+    body.light .nav-links {
+        background: rgba(255, 255, 255, 0.95);
+
+        border-color: #e4e4e7;
+    }
+
+    body.light .nav-links a {
+        border-color: #e4e4e7;
+    }
+
+    .menu-btn {
+        display: flex;
+    }
+
     .nav-links {
         display: none;
+
+        position: absolute;
+
+        top: 100%;
+        left: 0;
+        right: 0;
+
+        flex-direction: column;
+
+        gap: 0;
+
+        padding: 10px 25px 20px;
+
+        background: rgba(8, 8, 12, 0.95);
+        backdrop-filter: blur(15px);
+
+        border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .nav-links a {
+        padding: 14px 0;
+
+        border-bottom: 1px solid rgba(255, 255, 255, 0.06);
     }
 
     .hero {

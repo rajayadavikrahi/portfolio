@@ -83,6 +83,34 @@ window.addEventListener("scroll", () => {
 
 
 // =========================
+// MOBILE MENU
+// =========================
+
+const menuBtn = document.getElementById("menuBtn");
+const navMenu = document.querySelector(".nav-links");
+
+menuBtn.addEventListener("click", () => {
+
+    navMenu.classList.toggle("open");
+
+    menuBtn.classList.toggle("open");
+
+});
+
+navMenu.querySelectorAll("a").forEach((link) => {
+
+    link.addEventListener("click", () => {
+
+        navMenu.classList.remove("open");
+
+        menuBtn.classList.remove("open");
+
+    });
+
+});
+
+
+// =========================
 // SCROLL REVEAL
 // =========================
 
@@ -99,8 +127,7 @@ const observer = new IntersectionObserver(
 
                 entry.target.style.opacity = "1";
 
-                entry.target.style.transform =
-                    "translateY(0)";
+                entry.target.style.transform = "";
 
                 observer.unobserve(entry.target);
 
@@ -127,71 +154,3 @@ cards.forEach((card) => {
     observer.observe(card);
 
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
